@@ -4,6 +4,6 @@
 ### CSS
 ### API
 ### React JS
- 
+### Tailwind css
  
  ## Demo https://rick-and-morty-kappa-khaki.vercel.app/

@@ -3,7 +3,7 @@ import React from "react";
 export default function Cards({ id, name, image, status, gender, character }) {
   return (
     <>
-      <div className=" ">
+   
         <div className=" shadow-md border rounded-lg   bg-gray-800  border-gray-700">
           <img className="rounded-t-md w-full h-full" src={image} alt={name} />
 
@@ -25,7 +25,7 @@ export default function Cards({ id, name, image, status, gender, character }) {
             </p>
           </div>
         </div>
-      </div>
+       
     </>
   );
 }

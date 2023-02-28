@@ -5,31 +5,30 @@ import Button from "./Button";
 import Cards from "./Cards";
 
 export default function Container() {
-  const [characters, setCharacters] = useState([]);
-  const [dataEnd, setdataEnd] = useState([]);
+  const [dataEnd, setDataEnd] = useState([]);
   const [nextUrl, setNextUrl] = useState(null);
   const [prevUrl, setPrevUrl] = useState(null);
 
   // Function to fetch data from the API
-  const fetchData = async (urlAPI) => {
-    const response = await axios.get(urlAPI);
+  const fetchData = async (url_API) => {
+    const response = await axios.get(url_API);
     const data = response.data;
-    setCharacters(data.results);
+
     setNextUrl(data.info.next);
     setPrevUrl(data.info.prev);
     conditionData(data.results); //Apply conditional
   };
 
-  // Call fetchData- funcion
+  // Call fetchData funcion
   useEffect(() => {
     fetchData("https://rickandmortyapi.com/api/character");
   }, []);
 
-  //Appling filtering for the people still they are Alive
+  //Apply filtering for the people still they are Alive
   const conditionData = (data) => {
     const newItems = data.filter((item) => item.status === "Alive");
     // console.log(newItems);
-    setdataEnd(newItems);
+    setDataEnd(newItems);
   };
 
   // Function to handle clicks on the "Next Page" button

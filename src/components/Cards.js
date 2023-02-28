@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-export default function Cards({id, name, image, status, gender, character }) {
+export default function Cards({ id, name, image, status, gender, character }) {
   return (
     <>
-      <div className="max-w-2xl mx-auto">
-        <div className=" shadow-md border rounded-lg max-w-sm bg-gray-800  border-gray-700">
+      <div className=" ">
+        <div className=" shadow-md border rounded-lg   bg-gray-800  border-gray-700">
           <img className="rounded-t-md w-full h-full" src={image} alt={name} />
 
           <div className="px-3 pt-2">
-            <h1 className='text-white'>#{id}</h1>
+            <h1 className="text-white">#{id}</h1>
 
             <h5 className="text-gray-900 font-bold text-xl tracking-tight mb-2 dark:text-white">
               {name}

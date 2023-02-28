@@ -1,9 +1,9 @@
 # Rick and morty characters (Project)
-#using
+# using
 -HTML
 -CSS
 -API
 -React JS
  
  
- ##Demo https://rick-and-morty-kappa-khaki.vercel.app/
+ ## Demo https://rick-and-morty-kappa-khaki.vercel.app/
